@@ -17,6 +17,9 @@
 
 .value {
     flex-grow: 1;
+    display: flex;
+    gap: .5em;
+    flex-wrap: wrap;
 }
 
 
@@ -72,4 +75,14 @@
     padding: .25em .5em;
     cursor: pointer;
 }
+
+.option.selected {
+    background-color: hsl(200, 100%, 70%);
+}
+
+.option.highlighted {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+}
+
 

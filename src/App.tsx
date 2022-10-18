@@ -1,5 +1,6 @@
-import { Select } from './Select';
+import { Select, SelectOption } from './Select';
 import './App.css';
+import { useState } from 'react';
 
 const options = [
   {label: 'First', value: 1},
@@ -11,9 +12,14 @@ const options = [
 
 
 function App() {
+  const [value, setValue] = useState<SelectOption | undefined>(options[0])
   return (
     <div className="App">
-      <Select options={options}/>
+      <Select 
+        options={options} 
+        value={value}
+        onChange={option => setValue(option)}
+      />
     </div>
   );
 }
