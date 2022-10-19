@@ -85,4 +85,32 @@
     color: white;
 }
 
+.option-badge {
+    display: flex;
+    align-items: center;
+    border: .05em solid #777;
+    border-radius: .25em;
+    padding: .15em .25em;
+    gap: .25em;
+    cursor: pointer;
+    background: none;
+    outline: none;
+}
+
+.option-badge:hover,
+.option-badge:focus {
+    background-color: hsl(0, 100%, 90%);
+    border-color: hsl(0, 100%, 50%);
+}
+
+.option-badge:hover > .clear-btn,
+.option-badge:focus > .clear-btn {
+    color: hsl(0, 100%, 50%);
+}
+
+.option-badge > .clear-btn {
+    font-size: 1.25em;
+    color: #777;
+}
+
 
